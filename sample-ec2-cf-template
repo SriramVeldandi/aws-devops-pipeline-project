@@ -1,0 +1,11 @@
+Resources:
+  testec2instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: "t2.micro"
+      AvailabilityZone: "us-east-1a"
+      KeyName: "North-Virginia"
+      ImageId: "ami-04b4f1a9cf54c11d0"
+      Tags:
+      - Keys:Name
+        Value: CF-Instance1
